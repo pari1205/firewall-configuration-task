@@ -1,0 +1,33 @@
+Cybersecurity Internship – Task 4 Summary
+
+Objective:
+Set up and test basic firewall rules using Windows Defender Firewall.
+
+Steps Performed:
+1. Opened Control Panel and accessed "Windows Defender Firewall".
+2. Went to "Advanced Settings" and opened Inbound Rules.
+3. Created a new rule to block TCP port 23 (Telnet):
+   - Selected Port → TCP → Port 23
+   - Chose "Block the connection"
+   - Applied to Domain, Private, Public
+   - Named the rule: Block Telnet Port 23
+4. Verified rule by using Command Prompt:
+   - Ran "telnet localhost 23"
+   - Connection was successfully blocked
+5. Deleted the rule to restore default firewall state.
+
+Screenshots Included:
+- Firewall settings opened from Control Panel
+- Creating a new rule for Port 23
+- Rule listed in Inbound Rules
+- CMD showing Telnet test failure
+- Deleting the rule
+
+Tools Used:
+- Windows Defender Firewall
+- Command Prompt
+
+Learning Outcome:
+- Gained hands-on experience with firewall configuration
+- Understood how to block/allow specific ports
+- Learned importance of securing unused ports like Telnet (Port 23)
